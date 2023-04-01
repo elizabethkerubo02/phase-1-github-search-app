@@ -1,13 +1,115 @@
+/* Style the main container */
 #main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
-#github-container {
-  display: flex;
+/* Style the header */
+h2 {
+  font-size: 32px;
+  text-align: center;
 }
 
-ul {
+/* Style the search form */
+#github-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#search {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Style the user list */
+#user-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#user-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#user-list img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+#user-list a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+#user-list a:hover {
+  color: #007bff;
+}
+
+/* Style the repo list */
+#repos-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#repos-list li {
+  margin-bottom: 10px;
+}
+
+#repos-list a {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+#repos-list a:hover {
+  color: #007bff;
+}
+/* Style for user and repo cards */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card a {
+  color: #0366d6;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+.card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card li {
+  margin-bottom: 10px;
+}
+
+.user-card {
+  border-left: 5px solid #6d188c;
+}
+
+.repo-card {
+  border-left: 5px solid #7c0769;
 }
